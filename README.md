@@ -12,8 +12,10 @@ Copy
 docker build . -t ohif-viewer-image
 Copy
 3. Run the Docker container:
-docker run -d -p 3000:80/tcp -v /home/ec2-user/ohif-hctp/default.js:/usr/share/nginx/html/app-config.js --name ohif-viewer-container ohif-viewer-image
-Copy
+   
+`docker run -d -p 3000:80/tcp -v /home/ec2-user/ohif-hctp/default.js:/usr/share/nginx/html/app-config.js --name ohif-viewer-container ohif-viewer-image`
+
+
 This command does the following:
 - Runs the container in detached mode (`-d`)
 - Maps port 3000 on the host to port 80 in the container
